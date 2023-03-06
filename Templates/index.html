@@ -1,0 +1,74 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: white; 
+	width:100vw;
+	height:100vh; 
+	
+}  
+button {   
+       background-color: #ADD8E6;   
+       width: 20%;  
+        color: orange;   
+        padding: 15px;   
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;
+		border-radius: 30px;
+         }   
+ form {   
+        
+	align: center;
+	width: 50%;
+	margin: 0 auto;
+	border-radius: 30px;
+ 
+    }   
+ input[type=text], input[type=password] {   
+        width: 50%;   
+        margin: 8px 0;  
+        padding: 12px 20px;   
+        display: inline-block;   
+        border: 2px solid black;   
+        box-sizing: border-box;
+			border-radius: 30px;
+    }  
+ button:hover {   
+        opacity: 0.7;   
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+        
+     
+ .container {   
+        padding: 25px;   
+        background-color: white; 
+	border-radius: 30px;
+	
+	 
+    }   
+</style>   
+</head>    
+<body>    
+    <center> <h1> Account Creation Form </h1> </center>   
+    <form action="validation.php" method="post">  
+        <div class="container">   
+            <label>Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required> <br> 
+            <label>Password  :  </label>   
+            <input type="password" placeholder="Enter Password" name="password" required> <br> 
+            <button type="submit">Login</button><br>  
+            <input type="checkbox" checked="checked"> Remember me..
+			 <p style="display:inline">If you don't have an account</p><a href="signup.php" style="display:inline">create new</a>   
+        </div>   
+    </form>     
+</body>     
+</html> 
