@@ -1,0 +1,329 @@
+<!DOCTYPE html>  
+ <html lang="en">  
+ <head>  
+   <meta charset="UTF-8">  
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">  
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+   <title>Style store</title>  
+   <link rel="stylesheet" href="main.css">  
+   <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" width="10%" >  
+   <style>
+#timer {
+  font-size: 20px;
+  text-align: right;
+  text-color: blue;
+}
+</style>
+ </head>  
+ <body>  
+   <header>  
+     <div class="logo"><a href="#">Style Shop</a></div>  
+     <div class="menu">  
+       <a href=""><ion-icon name="close" class="close"></ion-icon></a>  
+       <ul>  
+         <li><a href="main.html" class="under">HOME</a></li>  
+         <li><a href="/login" class="under">Login</a></li>  
+          
+           
+         <li><a href="contactus.html" class="under">About us</a></li>  
+	 <li><a href="/signup" class="under">Signup</a></li> 
+       </ul>  
+     </div>  
+     <div class="search">  
+    
+    <form action="search.php" method="post"> 
+            <label >product</label> 
+            <input type="text" name="product" id="product" value="" /> 
+   <button type="submit" id = "button" class="button button-block"/>search</button>
+             
+        </form> 
+
+     </div>  
+     <div class="heading">  
+       <ul>  
+         <li><a href="main.html" class="under">HOME</a></li>  
+         <li><a href="/login" class="under">LOGIN</a></li>   
+         
+         <li><a href="contactus.html" class="under">ABOUT US</a></li>
+			<li><a href="/signup" class="under">SIGNUP</a></li>  
+       </ul>  
+     </div>  
+     <div class="heading1">  
+       <ion-icon name="menu" class="ham"></ion-icon>  
+     </div>  
+   </header>  
+ <header1>  
+     
+     <div class="menu">  
+       <a href=""><ion-icon name="close" class="close"></ion-icon></a>  
+       </div>    
+     <div class="heading">  
+       <ul> 
+         <li><a href="" class="under">Special Deals</a></li>  
+         <li><a href="tvs.html" class="under">Tv</a></li>
+         <li><a href="homeapp.html" class="under">Home Applicanes</a></li>  
+         <li><a href="laptop.html" class="under">Laptops</a></li>   
+         <li><a href="mobile.html" class="under">Mobiles</a></li>  
+         <li><a href="glossery.html" class="under">Glossery</a></li>   
+         <li><a href="furniture.html" class="under">Furnitures</a></li>
+         <li><a href="dress.html" class="under">Dress</a></li>  
+         <li><a href="watchs.html" class="under">Watches</a></li>  
+         <li><a href="shoe.html" class="under">Shoes</a></li>  
+        <div class="timer">
+	<div id="timer">
+  	<p id="time"></p>
+        </div>
+	</div>
+       </ul>  
+     </div>  
+     <div class="heading1">  
+       <ion-icon name="menu" class="ham"></ion-icon>  
+     </div>  
+   </header1><br>
+
+
+ <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://www.dpreview.com/files/p/articles/7450305057/Redmi_Note_1.jpeg" width="100%" height="10%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://m.media-amazon.com/images/I/71d5fMDvq9L._SY450_.jpg" width="100%" height="10%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://5.imimg.com/data5/RZ/MW/XO/SELLER-72090224/40-inch-crown-smart-led-tv-500x500.jpg"  width="100%" height="10%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+ 
+   <section>  
+     <div class="section">  
+       <div class="section2">  
+         <div class="container">  
+           <div class="items">  
+             <div class="img img1"><img  
+                 src="https://m.media-amazon.com/images/I/41Lvn59wyML._SY395_SX395_.jpg"  
+                 alt=""></div>  
+             <div class="name">ASIAN SHOES</div>  
+             <div class="price">Rs:700</div>  
+             <button class="buy" onclick="window.location.href = 's9.html';">Buy Now</button>     
+           </div>  
+          <div class="items">  
+             <div class="img img1"><img  
+                 src="https://m.media-amazon.com/images/I/81-7A8yfUpL._AC_UY218_.jpg"  
+                 alt=""></div>  
+             <div class="name">Samsung Galaxy M13 5G</div>  
+             <div class="price">Rs: 11,999</div>  
+             <button class="buy" onclick="window.location.href = 'm1.html';">Buy Now</button>
+  
+           </div> 
+           <div class="items">  
+             <div class="img img1"><img  
+                 src="https://m.media-amazon.com/images/I/51q9WR-LfHL._SX466_.jpg"  
+                 alt=""></div>  
+             <div class="name">Pigeon Brewster Coffee Maker</div>  
+             <div class="price">Rs: 1599</div>  
+             <button class="buy" onclick="window.location.href = 'h5.html';">Buy Now</button>   
+           </div>  
+           <div class="items">  
+             
+             <div class="img img1"><img  
+                 src="https://m.media-amazon.com/images/I/81dWrrf3-ML._SX425_.jpg"  
+                 alt=""></div>  
+             <div class="name">Cafe Wooden TV Cabinet</div>  
+             <div class="price">Rs: 899</div>  
+             <button class="buy" onclick="window.location.href = 'f5.html';">Buy Now</button>   
+           </div>  
+            <div class="items">  
+             <div class="img img2"><img  
+                 src="https://m.media-amazon.com/images/I/61S+NClCbIL._UX466_.jpg"  
+                 alt=""></div>  
+             <div class="name">Casio Enticer Analog watch</div>  
+             <div class="price">Rs:2500</div>  
+             <button class="buy" onclick="window.location.href = 'w2.html';">Buy Now</button>  
+           </div>  
+          <div class="items">  
+             <div class="img img3"><img  
+                 src="https://m.media-amazon.com/images/I/71gDWKKxxgL._UX679_.jpg"  
+                 alt=""></div>  
+             <div class="name">Alex Vando shirts</div>  
+             <div class="price">Rs: 999</div>  
+             <button class="buy" onclick="window.location.href = 'd3.html';">Buy Now</button>   
+           </div>  
+             
+           
+      <div class="items">  
+             <div class="img img1"><img  
+                 src="https://m.media-amazon.com/images/I/41MpZqk58DL.jpg"  
+                 alt=""></div>  
+             <div class="name">Campus Sutra Mens shits</div>  
+             <div class="price">Rs: 1000</div>  
+            <button class="buy" onclick="window.location.href = 'd4.html';">Buy Now</button>
+           </div>  
+  
+            
+           <div class="items">  
+             <div class="img img1"><img  
+                 src="https://m.media-amazon.com/images/I/41PnIUzyYML._SX300_SY300_QL70_FMwebp_.jpg"  
+                 alt=""></div>  
+             <div class="name">Lenovo IdeaPad Slim 3 Intel</div>  
+             <div class="price">Rs:30,999</div>  
+             <button class="buy" onclick="window.location.href = 'l6.html';">Buy Now</button>
+           </div>    
+        <div class="items">  
+             <div class="img img1"><img  
+                 src="https://m.media-amazon.com/images/I/613R8YoGPKL._SX466_.jpg"  
+                 alt=""></div>  
+             <div class="name">NAMRA ARTS Nesting</div>  
+             <div class="price">Rs:776</div>  
+             <button class="buy" onclick="window.location.href = 'f1.html';">Buy Now</button>
+  
+           </div>  
+   <div class="items">  
+             <div class="img img1"><img  
+                 src="https://5.imimg.com/data5/RZ/MW/XO/SELLER-72090224/40-inch-crown-smart-led-tv-500x500.jpg"  
+                 alt=""></div>  
+             <div class="name">Redmi utra HD 4K</div>  
+             <div class="price">Rs:5999</div>  
+             <button class="buy" onclick="window.location.href = 't1.html';">Buy Now</button>
+  
+           </div>
+         </div>  
+       </div>  
+     </div>  
+   </section> 
+
+  <script src="script.js"></script> 
+   <footer> 
+     <div class="footer0">  
+       <h1>StyleShop</h1>  
+     </div>  
+     <div class="footer1 ">  
+       Connect with us at<div class="social-media">  
+         <a href="#">  
+           <ion-icon name="logo-facebook"></ion-icon>  
+         </a>  
+         <a href="#">  
+           <ion-icon name="logo-linkedin"></ion-icon>  
+         </a>  
+         <a href="#">  
+           <ion-icon name="logo-youtube"></ion-icon>  
+         </a>  
+         <a href="#">  
+           <ion-icon name="logo-instagram"></ion-icon>  
+         </a>  
+         <a href="#">  
+           <ion-icon name="logo-twitter"></ion-icon>  
+         </a>  
+       </div>  
+     </div>  
+     <div class="footer2">  
+       <div class="product">  
+         <div class="heading">Products</div>  
+         <div class="div">Sell your Products</div>  
+         <div class="div">Advertise</div>  
+         <div class="div">Pricing</div>  
+         <div class="div">Product Buisness</div>  
+       </div>  
+       <div class="services">  
+         <div class="heading">Services</div>  
+         <div class="div">Return</div>  
+         <div class="div">Cash Back</div>  
+         <div class="div">Affiliate Marketing</div>  
+         <div class="div">Others</div>  
+       </div>  
+       <div class="Company">  
+         <div class="heading">Company</div>  
+         <div class="div">Complaint</div>  
+         <div class="div">Careers</div>  
+         <div class="div">Affiliate Marketing</div>  
+         <div class="div">Support</div>  
+       </div>  
+       <div class="Get Help">  
+         <div class="heading">Our Team</div>  
+         <div class="div">Kuberan v</div>  
+         <div class="div">Purushothaman.R</div>  
+        
+       </div>  
+     </div>  
+     <div class="footer3">Copyright © <h4>StyleShop</h4> 2021-2028</div>  
+   </footer>  
+   <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>  
+     
+ </body>  
+<script>
+var countDownDate = new Date("2023-02-28").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="timer"
+  document.getElementById("time").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("time").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+(function(w, d) { w.CollectId = "63f2fc0e24202a545dd93562";
+ var h = d.head || d.getElementsByTagName("head")[0];
+ var s = d.createElement("script");
+ s.setAttribute("type", "text/javascript");
+ s.async=true;
+ s.setAttribute("src", "https://collectcdn.com/launcher.js");
+ h.appendChild(s);
+ })(window, document);
+</script>
+
+ </html>  
